@@ -19,7 +19,7 @@ const handleDescriptionChange = (event) => {
 
 async function getItems() {
   try {
-    axios.get('http://127.0.0.1:7000/api/todoItems')
+    axios.get(apiRoot)
     .then(res=> {
       items.value = res.data
       msg.value = ''
